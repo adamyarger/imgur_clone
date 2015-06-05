@@ -2,10 +2,10 @@
 button {
   @include appearance(none);
   -webkit-font-smoothing: antialiased;
-  background-color: $action-color;
+  background-color: #fff;
   border-radius: $base-border-radius;
-  border: none;
-  color: #fff;
+  border: 1px solid $purple;
+  color: $purple;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
@@ -20,8 +20,8 @@ button {
 
   &:hover,
   &:focus {
-    background-color: darken($action-color, 15%);
-    color: #fff;
+    background-color: lighten($purple, 50%);
+    color: $purple;
   }
 
   &:disabled {
