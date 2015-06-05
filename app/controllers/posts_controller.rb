@@ -5,7 +5,7 @@ class PostsController < ApplicationController
 	end
 
 	def create
-		@post = current_user.posts.build(posts_params)
+		@post = current_user.posts.build(post_params)
 
 		if @post.save
 			flash[:success] = 'Post Success!'
@@ -15,4 +15,10 @@ class PostsController < ApplicationController
 			render :new
 		end
 	end
+
+	private
+
+		def post_params
+			params.require(:post).permit(:title, :image_url, :content)
+		end
 end
