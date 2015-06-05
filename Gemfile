@@ -16,6 +16,7 @@ gem "font-awesome-rails"
 gem 'bourbon'
 gem 'neat'
 gem 'refills'
+gem "normalize-rails"
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 

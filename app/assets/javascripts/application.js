@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+//flash message fade out
+
+$(document).ready(function(){
+  $(function() {
+   $('#flash').delay(500).slideDown('normal', function() {
+      $(this).delay(2500).slideUp();
+   });
+  });
+});
