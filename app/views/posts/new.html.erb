@@ -1,0 +1,17 @@
+<div class="form-bigbox">
+  <div class="form-box">
+		<%= form_for :post, url: posts_path do |f| %>
+		    
+		    <%= f.text_field :title, placeholder: "Title", class: 'form-control' %>
+		    <br>
+		    <%= f.text_field :image_url, placeholder: "Image Url", class: 'form-control' %>
+		    <br>
+		    <%= f.text_area :content, placeholder: "Content", class: 'form-control' %>
+		    <br>
+		    <div class="actions">
+			  	<%= f.submit "Submit" %>
+			  </div>
+
+		<% end %>
+	</div>
+</div>
