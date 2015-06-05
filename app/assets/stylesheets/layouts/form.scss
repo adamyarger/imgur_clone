@@ -16,7 +16,27 @@
   margin-top: 150px;
   border-radius: 10px;
 
+  h1 {
+  	text-align: center;
+	  margin-bottom: 35px;
+	  font-size: 2em;
+	  color: $purple;
+  }
+
+  .field {
+  	margin-bottom: 20px;
+  }
+
 	#{$all-button-inputs} {
 		width: 100%;
+	}
+
+	.login {
+		margin-top: 25px;
+
+		a {
+			color: $purple;
+			text-decoration: underline;
+		}
 	}
 }
