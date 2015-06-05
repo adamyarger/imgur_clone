@@ -1,0 +1,9 @@
+.form-bigbox {
+	@include outer-container;
+	margin-bottom: 150px;
+}
+
+.form-box {
+	@include span-columns(8);
+	@include shift(2)
+}
