@@ -1,9 +1,22 @@
+.form-back {
+	@include size(100%);
+	background: $purple;
+}
+
 .form-bigbox {
 	@include outer-container;
 	margin-bottom: 150px;
 }
 
 .form-box {
-	@include span-columns(8);
-	@include shift(2)
+	@include span-columns(6);
+	@include shift(3);
+  background-color: $white;
+  padding: 40px;
+  margin-top: 150px;
+  border-radius: 10px;
+
+	#{$all-button-inputs} {
+		width: 100%;
+	}
 }
