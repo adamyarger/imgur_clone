@@ -1,6 +1,7 @@
 .form-back {
 	@include size(100%);
 	background: $purple;
+	@include radial-gradient(#664a86, #534292)
 }
 
 .form-bigbox {
