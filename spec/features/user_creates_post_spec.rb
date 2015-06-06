@@ -5,13 +5,7 @@ feature 'user create a new post' do
 		user = FactoryGirl.create(:user)
 		login_as(user, :scope => :user)
 
-		visit 'posts/new'
-		fill_in 'Title',		:with => 'first post'
-		#need to write a mock, spy or double
-		fill_in 'Image Url',:with => 'http://imgur.com'
-		fill_in 'Content',	:with => 'funny image'
-
-		click_on 'Submit'
+		create_post('first post', 'http://imgur.com/', 'cool post')
 
 		expect(page.current_path).to eq root_path
 
