@@ -1,5 +1,9 @@
-<% @posts.each do |post| %>
-	<%= post.title %>
-	<%= post.image_url %>
-	<%= post.content %>
-<% end %>
+<div class="posts">
+	<% @posts.each do |post| %>
+		<div class="post">
+			<%= post.title %>
+			<%= post.image_url %>
+			<%= post.content %>
+		</div>
+	<% end %>
+</div>
