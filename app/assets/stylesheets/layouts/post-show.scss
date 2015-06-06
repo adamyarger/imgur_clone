@@ -1,0 +1,29 @@
+.show-bigbox {
+	@include span-columns(12);
+
+	.show-box {
+		@include span-columns(8);
+		@include shift(2);
+		background-color: $background;
+		padding: 10px 25px 20px 25px;
+		border: $background-border;
+		border-radius: 5px;
+
+		img {
+			border: $background-border;
+		}
+	}
+
+	li {
+		list-style: none;
+		margin-bottom: 10px;
+	}
+
+	h2 {
+		font-size: 1.4em;
+	}
+
+	.date {
+		color: $medium-gray;
+	}
+}

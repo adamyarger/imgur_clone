@@ -1,1 +1,11 @@
-<%= @post.image_url_html %>
+
+<div class="show-bigbox">
+	<div class="show-box">
+		<li><h2><%= @post.title %></h2></li>
+		<li>
+			<%= @post.user.username %> -
+			<span class="date"><%= time_ago_in_words(@post.created_at) %> ago</span>
+		</li>
+		<%= @post.image_url_html %>
+	</div>
+</div>
