@@ -6,4 +6,21 @@
 	border: $background-border;
 	border-radius: 5px;
 	margin-top: 10px;
+
+	.comment {
+		@include span-columns(12);
+		background: $white;
+		border: $background-border;
+		margin-top: 10px;
+		border-radius: 5px;
+
+		.comment-name {
+			padding: 15px 0 0 15px;
+			color: $purple;
+		}
+
+		p {
+			padding: 15px;
+		}
+	}
 }
