@@ -1,9 +1,18 @@
 <div class="posts">
 	<% @posts.each do |post| %>
 		<%= link_to post_path(post), method: :get do %>
-			<div class="post" style="background-image: url(<%= post.image_url %>)"></div>
+			<div class="post hover-tile-outer" style="background-image: url(<%= post.image_url %>)">
+				<div class="hover-tile-container">
+			    <div class="hover-tile hover-tile-visible"></div>
+			    <div class="hover-tile hover-tile-hidden">
+			      <h4><%= post.title %></h4>
+			    </div>
+			  </div>
+			</div>
 		<% end %>
 	<% end %>
 </div>
+
+
 
 
