@@ -8,6 +8,7 @@
   background-color: #f5f5f5;
   padding: 7px;
   border-radius: 5px;
+  border: 1px solid #e3e3e3;
 }
 
 .post {
@@ -16,7 +17,8 @@
   width: 187px;
   height: 187px;
   margin: 5px;
-  border: 2px solid $light-gray;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
   background-position: center center;
   background-size: cover;
 }
