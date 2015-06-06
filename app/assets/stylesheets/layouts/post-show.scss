@@ -1,5 +1,6 @@
 .show-bigbox {
 	@include span-columns(12);
+	margin-top: 20px;
 
 	.show-box {
 		@include span-columns(8);

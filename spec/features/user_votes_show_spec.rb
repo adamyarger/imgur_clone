@@ -7,7 +7,7 @@ feature 'user votes for a post' do
 
 		visit root_path
 		create_post('first post', 'http://imgur.com/', 'cool post')
-		expect(page.current_path).to eq root_path
+		click_on('first post')
 
 		find('.up').click
 
@@ -21,8 +21,7 @@ feature 'user votes for a post' do
 		visit root_path
 
 		create_post('first post', 'http://imgur.com/', 'cool post')
-		visit root_path
-		expect(page.current_path).to eq root_path
+		click_on('first post')
 
 		find('.down').click
 

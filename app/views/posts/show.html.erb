@@ -7,5 +7,15 @@
 			<span class="date"><%= time_ago_in_words(@post.created_at) %> ago</span>
 		</li>
 		<%= @post.image_url_html %>
+
+		<div class="vote">
+    	<%= link_to like_post_path(@post), method: :put, class: 'up' do %>
+			<span><i class="fa fa-chevron-up"></i></span>
+			<% end %>
+			<%= link_to dislike_post_path(@post), method: :put, class: 'down' do %>
+				<span><i class="fa fa-chevron-down"></i></span>
+			<% end %>
+    </div>
+    <p><%= @post.get_upvotes.size %> points</p>
 	</div>
 </div>
