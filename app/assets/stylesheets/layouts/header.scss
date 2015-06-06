@@ -20,7 +20,7 @@
     @include clearfix;
     position: relative;
     padding: 15px 25px 15px 25px;
-    background-color: $light-gray;
+    @include linear-gradient(#664a86, #534292)
   }
 
   .logo {
@@ -31,7 +31,7 @@
       padding: 9px;
       font-weight: 500;
       cursor: pointer;
-      color: $dark-gray;
+      color: $white;
       @include transition-property(border);
       @include transition-duration(0.5s);
       @include transition-timing-function(ease-in);
@@ -75,7 +75,11 @@
     width: 100%;
 
     a{
-      color: $dark-gray;
+      color: tint($purple, 60%);
+
+      &:hover {
+        color: $white;
+      }
     }
 
     @include media ($large-screen) {

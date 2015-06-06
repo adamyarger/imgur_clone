@@ -8,9 +8,8 @@
 </head>
 <body>
 
- 	<% if !current_page = (new_user_registration_path || new_user_session_path) %>
+ 	
 		<%= render 'layouts/header' %>
-	<% end %>
 
 	<div class="container">
 		<% flash.each do |message_type, message| %>
