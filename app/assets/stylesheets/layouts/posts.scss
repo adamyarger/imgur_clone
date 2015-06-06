@@ -1,6 +1,7 @@
 .posts {
 	@include outer-container;
 	margin-bottom: 150px;
+  margin-top: 20px;
 	@include span-columns(10);
 	@include shift(1);
 	position: relative;
