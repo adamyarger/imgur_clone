@@ -11,6 +11,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem "devise"
 gem "auto_html"
+gem 'acts_as_votable', '~> 0.10.0'
+
 
 # design
 gem "font-awesome-rails"

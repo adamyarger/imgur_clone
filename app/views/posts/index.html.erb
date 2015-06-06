@@ -1,15 +1,29 @@
 <div class="posts">
 	<% @posts.each do |post| %>
-		<%= link_to post_path(post), method: :get do %>
+		
 			<div class="post hover-tile-outer" style="background-image: url(<%= post.image_url %>)">
 				<div class="hover-tile-container">
 			    <div class="hover-tile hover-tile-visible"></div>
 			    <div class="hover-tile hover-tile-hidden">
-			      <h4><%= post.title %></h4>
+			    	<div class="posts-title">
+			    		<%= link_to post_path(post), method: :get do %>
+				      	<h4><%= post.title %></h4>
+				      <% end %>
+			    	</div>
+			      
+			      <div class="vote">
+			      	<%= link_to like_post_path(post), method: :put, class: 'up' do %>
+							<span><i class="fa fa-chevron-up"></i></span>
+							<% end %>
+							<%= link_to dislike_post_path(post), method: :put, class: 'down' do %>
+								<span><i class="fa fa-chevron-down"></i></span>
+							<% end %>
+			      </div>
+			      <p><%= post.get_upvotes.size %> points</p>
 			    </div>
 			  </div>
 			</div>
-		<% end %>
+		
 	<% end %>
 </div>
 

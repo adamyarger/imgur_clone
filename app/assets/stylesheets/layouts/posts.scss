@@ -35,7 +35,6 @@
   background-size: cover;
   background-color: beige;
   border: 1px solid $base-border-color;
-  cursor: pointer;
   height: $hover-tile-height;
   margin-bottom: $base-line-height;
 
@@ -65,10 +64,22 @@
       line-height: $base-line-height;
     }
 
+    a {
+      color: shade($white, 20%);
+
+      &:hover {
+        color: $white;
+      }
+    }
+
     h4 {
       margin: 0 0 0.5em 0;
     }
   }
+}
+
+.posts-title {
+  height: 80px;
 }
 
 
