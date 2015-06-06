@@ -1,13 +1,20 @@
 .posts {
 	@include outer-container;
 	margin-bottom: 150px;
+	@include span-columns(10);
+	@include shift(1);
+	position: relative;
+  width: 1000px;
+  background-color: #f5f5f5;
+  padding: 7px;
+  border-radius: 5px;
 }
 
 .post {
 	@include span-columns(2);
 	display: inline-block;
-  width: 180px;
-  height: 180px;
+  width: 187px;
+  height: 187px;
   margin: 5px;
   border: 2px solid $light-gray;
   background-position: center center;
