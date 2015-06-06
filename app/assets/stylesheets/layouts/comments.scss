@@ -1,0 +1,9 @@
+.comments-box {
+	@include span-columns(8);
+	@include shift(2);
+	background-color: $background;
+	padding: 10px 25px 20px 25px;
+	border: $background-border;
+	border-radius: 5px;
+	margin-top: 10px;
+}
