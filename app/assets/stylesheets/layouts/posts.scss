@@ -48,7 +48,7 @@
   }
 
   .hover-tile {
-    @include transition(all, 0.2s ease-in-out);
+    @include transition(all, 0.1s ease-in-out);
     background: inherit;
     color: white;
     height: inherit;
