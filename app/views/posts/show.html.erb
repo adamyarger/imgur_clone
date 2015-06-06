@@ -15,7 +15,7 @@
 			<%= link_to dislike_post_path(@post), method: :put, class: 'down' do %>
 				<span><i class="fa fa-chevron-down"></i></span>
 			<% end %>
+			<span><%= @post.get_upvotes.size %> points</span>
     </div>
-    <p><%= @post.get_upvotes.size %> points</p>
 	</div>
 </div>

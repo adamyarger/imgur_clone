@@ -1,6 +1,7 @@
 .show-bigbox {
 	@include span-columns(12);
 	margin-top: 20px;
+	margin-bottom: 100px;
 
 	.show-box {
 		@include span-columns(8);
@@ -10,6 +11,19 @@
 		border: $background-border;
 		border-radius: 5px;
 		text-align: center;
+
+		span {
+			font-weight: bold;
+		}
+
+		i {
+			font-size: 2em;
+  		color: $purple;
+
+  		&:hover {
+  			color: tint($purple, 20%);
+  		}
+		}
 
 		img {
 			border: $background-border;
