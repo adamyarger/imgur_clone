@@ -1,9 +1,7 @@
 <div class="posts">
 	<% @posts.each do |post| %>
-		<div class="post">
-			<div class="thumb" style="background-image: url(<%= post.image_url %>)">
+			<div class="post" style="background-image: url(<%= post.image_url %>)">
 			</div>
-		</div>
 	<% end %>
 </div>
 
