@@ -9,10 +9,3 @@ module Features
 		click_on 'Submit'
 	end
 end
-
-# def table_for(collection, *args)
-#   "Got #{collection} and #{args.join(', ')}"
-# end
-
-# table_for("one")                    » 	"Got one and "
-# table_for("one", "two")             » 	"Got one and two"
