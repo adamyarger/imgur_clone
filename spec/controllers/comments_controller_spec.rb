@@ -16,18 +16,12 @@ describe CommentsController, type: :controller do
 				expect(Comment.count).to eq(1)
 			end
 
-			# it "renders the comment" do
-   #      product_response = json_response[:product]
-   #      expect(product_response[:title]).to eql @product_attributes[:title]
-   #    end
+			it 'renders the comment' do
+				post :create, { user_id: @user.id, post_id: @post, comment: @comment_attributes }
+				expect(response).to redirect_to @post
+			end
 
 		end
 	end
 end
 
-# before(:each) do
-#     @thing = Factory(:thing)
-#     attrs = FactoryGirl.attributes_for(:description, :thing_id => @thing)
-
-#     post :create, :thing_id => @thing, :description => attrs
-#   end
