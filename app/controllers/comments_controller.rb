@@ -12,7 +12,7 @@ class CommentsController < ApplicationController
 			redirect_to post_path(@post)
 		else
 			flash[:error] = 'Something Went Wrong'
-			render :new
+			redirect_to post_path(@post)
 		end
 	end
 
