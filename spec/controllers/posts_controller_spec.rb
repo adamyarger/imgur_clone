@@ -66,16 +66,6 @@ describe PostsController, type: :controller do
 		end
 	end
 
-	# describe 'PUT/PATCH #upvote' do
-	# 	before(:each) do
-	# 		@user = FactoryGirl.create :user
-	# 		sign_in user
-	# 	end
-
-	# 	context 'with valid attributes' do
-	# 		put :upvote, id: @user, 
-	# 	end
-	# end
 end
 
 
